@@ -1,4 +1,4 @@
-# Note App
+# Note App JS
 This workshop is designed to help you create a note-taking application using JavaScript, HTML, and Tailwind CSS. The application allows users to add, edit, delete, and search notes.
 
 $\color{red}{\textsf{This project is a clone from my previous GitHub repository.}} $<a href="https://github.com/PharadolBrown/PortfolioJavascript/tree/main/Note" traget="_blank">  this repository</a>
