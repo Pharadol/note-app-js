@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="relative overflow-x-hidden">
+    <div class="mx-auto w-11/12 md:w-10/12 lg:w-6/12 relative z-10">
+
+        <h1 class="text-center text-3xl font-thin pt-10 pb-10">Note App</h1>
+
+        <div class="flex justify-end">
+            <input type="text" class="search border-2 place-self-end px-2" placeholder="search your title note...">
+        </div>
+
+        <form action="" class="form flex flex-col">
+            <label for="">Title</label>
+            <input type="text" class="title border-2 px-2" placeholder="enter your title" required>
+            <label for="">Note</label>
+            <input type="text" class="article border-2 h-16 px-2" placeholder="enter your note" required>
+            <button type="submit" class="submit mt-1 px-4 flex justify-center items-center rounded-sm max-w-max place-self-end text-white bg-green-500 hover:bg-green-600 transaction duration-300">submit</button>
+        </form>
+
+        <div class="posts-area">
+            
+        </div>
+    </div>
+
+    <style>
+        .edit-container{
+            width:300px;
+            transform: translateX(-310px);
+        }
+        .move{
+            transform: translateX(0);
+        }
+    </style>
+    <div class="edit-container z-20 bg-black bg-opacity-60 sticky right-0 bottom-0 transform duration-300 pt-2">
+             <form action="" class="formEdit flex flex-col px-3 pb-5">
+            <label for="" class="text-white">Title</label>
+            <input type="text" class="titleEdit border-2 px-2" placeholder="enter your title">
+            <label for="" class="text-white">Article</label>
+            <input type="text" class="articleEdit border-2 h-16 px-2" placeholder="enter your note">
+            <button type="submit" class="submitEdit mt-1 px-4 flex justify-center items-center rounded-sm max-w-max place-self-end text-white bg-yellow-500 hover:bg-yellow-600 transaction duration-300">edit</button>
+            <a class="cancleEdit cursor-pointer px-3 rounded-sm bg-red-500 text-white absolute top-1 right-1">X</a>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
